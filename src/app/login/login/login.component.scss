@@ -1,0 +1,42 @@
+/* login.component.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+.mat-raised-button {
+  margin-right: 10px;
+}
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+}
+
+.prazo-encerrado-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mat-card {
+  width: 20%;
+
+}
+
+h2 {
+  text-align: center;
+  color: rebeccapurple;
+}
+
