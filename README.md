@@ -9,7 +9,7 @@ Dependencias:
 Instalação:
 ```sh
 npm install -g @angular/cli@12.2.18
-npm instal
+npm install
 ```
 
 Rodar servidor:
