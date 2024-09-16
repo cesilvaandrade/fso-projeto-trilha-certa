@@ -14,8 +14,8 @@
         <mat-error *ngIf="loginForm.get('cpf')?.hasError('required')">CPF is required</mat-error>
       </mat-form-field>
       <div class="btn-group">
-        <button mat-raised-button color="primary" type="button">Login</button>
-        <button mat-raised-button color="accent" type="button">Cadastro</button>
+        <button mat-raised-button color="primary" (click)="obterInfo()"  type="button">Login</button>
+        <button mat-raised-button color="accent" (click)="cadastrar()" type="button">Cadastro</button>
       </div>
     </form>
   </div>

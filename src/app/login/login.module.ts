@@ -10,6 +10,8 @@ import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
+import {ApiService} from "./login/login.service";
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -26,7 +28,9 @@ import {MatCardModule} from "@angular/material/card";
     MatInputModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule
-  ]
+    MatCardModule,
+    HttpClientModule
+  ],
+  providers: [ApiService]
 })
 export class LoginModule { }

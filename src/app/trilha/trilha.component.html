@@ -11,7 +11,7 @@
         <h2 style="text-align: center;">ENEGRE-SER</h2>
         <p style="text-align: center;">Enfoque social</p>
         <p style="text-align: center;">Vagas disponíveis: {{ enegreSerVagas }}</p>
-        <button mat-raised-button [disabled]="enegreSerVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
+        <button mat-raised-button (click)="selecionaTrilha('A')" [disabled]="enegreSerVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
       </mat-card-content>
     </mat-card>
 
@@ -20,7 +20,7 @@
         <h2 style="text-align: center;">DINHEIRO NA MÃO É VENDAVAL</h2>
         <p style="text-align: center;">Finanças pessoais</p>
         <p style="text-align: center;">Vagas disponíveis: {{ dinheiroVagas }}</p>
-        <button mat-raised-button [disabled]="dinheiroVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
+        <button mat-raised-button (click)="selecionaTrilha('B')" [disabled]="dinheiroVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
       </mat-card-content>
     </mat-card>
 
@@ -29,7 +29,7 @@
         <h2 style="text-align: center;">ADMIRÁVEL MUNDO NOVO</h2>
         <p style="text-align: center;">Tecnologias digitais</p>
         <p style="text-align: center;">Vagas disponíveis: {{ admiravelVagas }}</p>
-        <button mat-raised-button [disabled]="admiravelVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
+        <button mat-raised-button (click)="selecionaTrilha('C')" [disabled]="admiravelVagas === 0 " style="display: block; margin: 0 auto;">Selecionar</button>
       </mat-card-content>
     </mat-card>
 
@@ -38,7 +38,7 @@
         <h2 style="text-align: center;">AGROECOLOGIA</h2>
         <p style="text-align: center;">Agroecologia</p>
         <p style="text-align: center;">Vagas disponíveis: {{ agroecologiaVagas }}</p>
-        <button mat-raised-button [disabled]="agroecologiaVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
+        <button mat-raised-button (click)="selecionaTrilha('D')" [disabled]="agroecologiaVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
       </mat-card-content>
     </mat-card>
   </div>

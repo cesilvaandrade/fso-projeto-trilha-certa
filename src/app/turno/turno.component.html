@@ -10,7 +10,7 @@
       <mat-card-content>
         <h2 style="text-align: center;">Turno Matutino</h2>
         <p style="text-align: center;">Vagas disponíveis: {{ matutinoVagas }}</p>
-        <button mat-raised-button [disabled]="matutinoVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
+        <button mat-raised-button [disabled]="matutinoVagas === 0 || !this.vez" (click)="selecionaTrilha('matutino')" style="display: block; margin: 0 auto;">Selecionar</button>
       </mat-card-content>
     </mat-card>
 
@@ -18,7 +18,7 @@
       <mat-card-content>
         <h2 style="text-align: center;">Turno Vespertino</h2>
         <p style="text-align: center;">Vagas disponíveis: {{ vespertinoVagas }}</p>
-        <button mat-raised-button [disabled]="vespertinoVagas === 0" style="display: block; margin: 0 auto;">Selecionar</button>
+        <button mat-raised-button  [disabled]="vespertinoVagas === 0 || !this.vez" (click)="selecionaTrilha('vespertino')" style="display: block; margin: 0 auto;">Selecionar</button>
       </mat-card-content>
     </mat-card>
   </div>

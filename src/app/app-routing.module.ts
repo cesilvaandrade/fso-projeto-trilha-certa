@@ -8,8 +8,8 @@ import {TrilhaComponent} from "./trilha/trilha.component";
 const routes: Routes = [
   { path: '', component: AppComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'turno', component: TurnoComponent },
-  { path: 'trilha', component: TrilhaComponent }
+  { path: 'turno/:cpf', component: TurnoComponent },
+  { path: 'trilha/:cpf/:turno', component: TrilhaComponent }
 ];
 
 @NgModule({
