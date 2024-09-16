@@ -9,7 +9,7 @@ export class ApiService {
   private apiUrl = 'http://localhost:8000'; // URL base do seu backend
 
   constructor(private http: HttpClient) { }
-  cadastroAluno(cpf: string): Observable<any> {
-    return this.http.post(`${this.apiUrl}/api/cadastro/${cpf}`, {});
+  getVagas(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/api/vagas/turno`, {});
   }
 }
